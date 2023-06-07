@@ -1,10 +1,15 @@
 # Recommendation for customizing FLARE-VM
 
-[ Install Flare-VM ]
-
-````
-https://github.com/mandiant/flare-vm
-````
+## Quick Start
+* Download the installation script [`rem-installer.ps1`](https://raw.githubusercontent.com/mandiant/flare-vm/main/install.ps1) to your desktop
+  * `(New-Object net.webclient).DownloadFile('https://raw.githubusercontent.com/mandiant/flare-vm/main/install.ps1',"$([Environment]::GetFolderPath("Desktop"))\install.ps1")`
+* Unblock the installation script by running:
+  * `Unblock-File .\rem-installer.ps1`
+* Enable script execution by running:
+  * `Set-ExecutionPolicy Unrestricted`
+  * Paste "A" (Yes to All) and press Enter
+* Finally, execute the installer script as follow:
+  * `.\install.ps1`
 
 [ Open Powershell.exe as Administrator. Run commands below after flare-vm installation is completed ]
 

@@ -1,17 +1,25 @@
 # Recommendation for customizing FLARE-VM
 
 ## Quick Start
-* Download the installation script [`rem-installer.ps1`](https://raw.githubusercontent.com/mandiant/flare-vm/main/install.ps1) to your desktop
-  * `(New-Object net.webclient).DownloadFile('https://raw.githubusercontent.com/mandiant/flare-vm/main/install.ps1',"$([Environment]::GetFolderPath("Desktop"))\install.ps1")`
+* Open Powershell as Administrator than download the installation script [`rem-installer.ps1`](https://github.com/SOC-AFU/rem-vm/raw/main/rem-installer.ps1) to your desktop
+````
+(New-Object net.webclient).DownloadFile('https://github.com/SOC-AFU/rem-vm/raw/main/rem-installer.ps1',"$([Environment]::GetFolderPath("Desktop"))\rem-installer.ps1")
+````
 * Unblock the installation script by running:
-  * `Unblock-File .\rem-installer.ps1`
+````
+Unblock-File .\rem-installer.ps1
+````
 * Enable script execution by running:
-  * `Set-ExecutionPolicy Unrestricted`
-  * Paste "A" (Yes to All) and press Enter
+````
+Set-ExecutionPolicy Unrestricted
+````
+* Paste "A" (Yes to All) and press Enter
 * Finally, execute the installer script as follow:
-  * `.\install.ps1`
+````
+.\rem-installer.ps1
+````
+During installation the system will be restarted several times. You should login to the system and accept elevating promt
 
-[ Open Powershell.exe as Administrator. Run commands below after flare-vm installation is completed ]
 
 ````cmd (powershell)
 choco upgrade chocolatey

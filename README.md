@@ -18,9 +18,10 @@ Set-ExecutionPolicy Unrestricted
 ````
 .\rem-installer.ps1
 ````
-During installation the system will be restarted several times. You should login to the system and accept elevating promt
+During installation the system should be restarted several times. Please following instructions 
 
 
+## Manual Mode
 ````cmd (powershell)
 choco upgrade chocolatey
 choco install apimonitor.vm exeinfope.vm ollydbg.scyllahide.vm ollydbg2.scyllahide.vm x64dbg.scyllahide.vm regshot.vm capa.vm exiftool.vm ghidra.vm idafree.vm x64dbg.vm x32dbg procdot de4dot-cex.vm wireshark.vm dnspy fiddler networkminer.vm pestudio.vm die.vm 010editor.vm sublimetext4 file.vm hashmyfiles.vm floss.vm orca fakenet-ng.vm peid.vm scdbg.vm postman googlechrome 7zip winrar yara.vm thunderbird graphviz volatility volatility3 git sysmon -y > $HOME\Desktop\result.log

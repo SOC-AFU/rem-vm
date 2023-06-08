@@ -34,7 +34,8 @@ Set-ExecutionPolicy Unrestricted
 ## Manual Mode
 
 Follow the steps described in the official [`FLARE-VM`](https://github.com/mandiant/flare-vm/tree/main) repository before running `.\install.ps1`.
-Next run `install.ps1` with the parameter `-customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml"`
+Next run `install.ps1` with the parameter 
+`-customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml"`
 ````
 .\install.ps1 -password "Passw0rd!" -noWait -noGui -noChecks -customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml"
 ````

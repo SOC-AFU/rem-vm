@@ -11,9 +11,9 @@
       * https://github.com/jeremybeaume/tools/blob/master/disable-defender.ps1
 
 
-* Open Powershell as Administrator than download the installation script [`rem-installer.ps1`](https://github.com/SOC-AFU/rem-vm/raw/main/rem-installer.ps1) to your desktop
+* Open Powershell as Administrator than download the installation script [`rem-installer.ps1`](https://github.com/SOC-AFU/rem-vm/blob/main/rem-installer1.ps1) to your desktop
 ````
-(New-Object net.webclient).DownloadFile('https://github.com/SOC-AFU/rem-vm/raw/main/rem-installer.ps1',"$([Environment]::GetFolderPath("Desktop"))\rem-installer.ps1")
+(New-Object net.webclient).DownloadFile('https://github.com/SOC-AFU/rem-vm/blob/main/rem-installer1.ps1',"$([Environment]::GetFolderPath("Desktop"))\rem-installer.ps1")
 ````
 * Unblock the installation script by running:
 ````
@@ -28,15 +28,16 @@ Set-ExecutionPolicy Unrestricted
 ````
 .\rem-installer.ps1
 ````
-During installation the system should be restarted several times. Please following instructions 
+------
 
 
 ## Manual Mode
-````cmd (powershell)
-choco upgrade chocolatey
-choco install apimonitor.vm exeinfope.vm ollydbg.scyllahide.vm ollydbg2.scyllahide.vm x64dbg.scyllahide.vm regshot.vm capa.vm exiftool.vm ghidra.vm idafree.vm x64dbg.vm x32dbg procdot de4dot-cex.vm wireshark.vm dnspy fiddler networkminer.vm pestudio.vm die.vm 010editor.vm sublimetext4 file.vm hashmyfiles.vm floss.vm orca fakenet-ng.vm peid.vm scdbg.vm postman googlechrome 7zip winrar yara.vm thunderbird graphviz volatility volatility3 git sysmon -y > $HOME\Desktop\result.log
+
+Follow the steps described in the official [`FLARE-VM`](https://github.com/mandiant/flare-vm/tree/main) repository before running `.\install.ps1`.
+Next run `install.ps1` with the parameter `-customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml"`
 ````
-[ Review the log file into "Failures" section and resolve it with manual installation ]
+.\install.ps1 -password "Passw0rd!" -noWait -noGui -noChecks -customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml"
+````
 
 [ Copy and Paste all of the commands below at once ]
 
@@ -50,7 +51,6 @@ Invoke-WebRequest https://raw.githubusercontent.com/DidierStevens/DidierStevensS
 
 ````
 
-[ Additional instalations ]
 ````cmd (powershell)
 pip install -U oletools[full]
 New-Item $HOME\Desktop\SAMPLES -ItemType Directory

@@ -1,6 +1,16 @@
 # Recommendation for customizing FLARE-VM
 
 ## Quick Start
+ * Disable Tamper Protection and any Anti-Malware solution (e.g., Windows Defender), preferably via Group Policy.
+    * Disabling Tamper Protection
+      * https://support.microsoft.com/en-us/windows/prevent-changes-to-security-settings-with-tamper-protection-31d51aaa-645d-408e-6ce7-8d7f8e593f87
+      * https://www.tenforums.com/tutorials/123792-turn-off-tamper-protection-windows-defender-antivirus.html
+    * Disabling Windows Defender
+      * https://stackoverflow.com/questions/62174426/how-to-permanently-disable-windows-defender-real-time-protection-with-gpo
+      * https://www.windowscentral.com/how-permanently-disable-windows-defender-windows-10
+      * https://github.com/jeremybeaume/tools/blob/master/disable-defender.ps1
+
+
 * Open Powershell as Administrator than download the installation script [`rem-installer.ps1`](https://github.com/SOC-AFU/rem-vm/raw/main/rem-installer.ps1) to your desktop
 ````
 (New-Object net.webclient).DownloadFile('https://github.com/SOC-AFU/rem-vm/raw/main/rem-installer.ps1',"$([Environment]::GetFolderPath("Desktop"))\rem-installer.ps1")

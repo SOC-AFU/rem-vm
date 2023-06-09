@@ -13,7 +13,7 @@
 
 * Open Powershell as Administrator than download the installation script [`rem-installer.ps1`](https://github.com/SOC-AFU/rem-vm/blob/main/rem-installer1.ps1) to your desktop
 ````
-(New-Object net.webclient).DownloadFile('https://github.com/SOC-AFU/rem-vm/blob/main/rem-installer1.ps1',"$([Environment]::GetFolderPath("Desktop"))\rem-installer.ps1")
+(New-Object net.webclient).DownloadFile('https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-installer1.ps1',"$([Environment]::GetFolderPath("Desktop"))\rem-installer.ps1")
 ````
 * Unblock the installation script by running:
 ````

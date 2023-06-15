@@ -51,7 +51,6 @@
         <package name="pestudio.vm"/>
         <package name="sublimetext4"/>
         <package name="file.vm"/>
-        <package name="orca"/>
         <package name="scdbg.vm"/>
         <package name="postman"/>
         <package name="googlechrome"/>

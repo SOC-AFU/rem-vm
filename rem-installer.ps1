@@ -19,7 +19,7 @@ $winowsUpdate =   "Registry::HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpd
 $winowsUpdateAU = "Registry::HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU";
 $windowsNotification = "Registry::HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer"
 $desktopPath = [Environment]::GetFolderPath("Desktop")
-$flare_install = $false
+$crntusr = [Environment]::UserName
 
 Write-Host "[+] Checking if script is running as administrator..."
 
@@ -32,6 +32,9 @@ if(-Not $($(whoami) -eq "nt authority\system")) {
         Exit
     }
 } 
+
+Write-Host "[+] Clear user password ..." -ForegroundColor Green
+Set-LocalUser -name $crntusr -Password ([securestring]::new())
 
 Write-Host "[+] Disabling Windows Update..."
 
@@ -168,6 +171,6 @@ try{
         exit 1
 }
 
-.\install.ps1  -noWait -noGui -noChecks -customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml"
+.\install.ps1 -customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml" -noPassword -noWait -noGui -noChecks 
 
 New-Item  "$desktopPath\SAMPLES" -Type Directory -ErrorAction SilentlyContinue | Out-Null

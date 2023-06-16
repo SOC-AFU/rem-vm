@@ -10,6 +10,7 @@
         <package name="010editor.vm"/>
         <package name="7zip-15-05.vm"/>
         <package name="apimonitor.vm"/>
+        <package name="processhacker"/>
         <package name="apktool.vm"/>
         <package name="capa.vm"/>
         <package name="cmder.vm"/>

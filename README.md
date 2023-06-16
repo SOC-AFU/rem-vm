@@ -36,7 +36,7 @@ Follow the steps described in the official [`FLARE-VM`](https://github.com/mandi
 Next run `install.ps1` with the parameter 
 `-customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml"`
 ````
-.\install.ps1 -password "Passw0rd!" -noWait -noGui -noChecks -customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml"
+.\install.ps1 -customConfig "https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-config.xml" -noWait -noGui -noChecks 
 ````
 
 [ Copy and Paste all of the commands below at once ]

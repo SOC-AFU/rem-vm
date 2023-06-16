@@ -64,5 +64,6 @@
         <package name="volatility3"/>
         <package name="git"/>
         <package name="sysmon"/>
+        <package name="wsl-ubuntu-2204"/>
     </packages>
 </config>

@@ -17,7 +17,7 @@
 ````
 * Unblock the installation script by running:
 ````
-Unblock-File  Unblock-File $HOME\rem-installer.ps1
+Unblock-File $HOME\rem-installer.ps1
 ````
 * Enable script execution by running:
 ````

@@ -56,7 +56,6 @@
         <package name="postman"/>
         <package name="googlechrome"/>
         <package name="7zip"/>
-        <package name="winrar"/>
         <package name="yara.vm"/>
         <package name="thunderbird"/>
         <package name="graphviz"/>

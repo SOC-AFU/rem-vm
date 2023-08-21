@@ -155,9 +155,7 @@ New-Item $HOME\Desktop\SAMPLES -ItemType Directory
 ````
 
 [ Optional: Adding SIFT and REMnux to your Windows Forensics environment ]
-````cmd (powershell)
-Following next instructions [environment](https://bakerstreetforensics.com/2021/05/26/adding-sift-and-remnux-to-your-windows-forensics-environment/)
-````
+* Following next [instructions](https://bakerstreetforensics.com/2021/05/26/adding-sift-and-remnux-to-your-windows-forensics-environment)
 
 [ Customize other configurations and/or tools to your liking ]
 

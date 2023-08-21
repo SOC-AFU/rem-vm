@@ -11,7 +11,7 @@
       * https://github.com/jeremybeaume/tools/blob/master/disable-defender.ps1
 
 
-* Open Powershell as Administrator than download the installation script [`rem-installer.ps1`](https://github.com/SOC-AFU/rem-vm/blob/main/rem-installer1.ps1) to your desktop
+* Open Powershell as Administrator than download the installation script [`rem-installer.ps1`](https://github.com/SOC-AFU/rem-vm/blob/main/rem-installer.ps1) to your desktop
 ````
 (New-Object net.webclient).DownloadFile('https://raw.githubusercontent.com/SOC-AFU/rem-vm/main/rem-installer.ps1',"$([Environment]::GetFolderPath("Desktop"))\rem-installer.ps1")
 ````

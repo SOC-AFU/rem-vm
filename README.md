@@ -154,8 +154,12 @@ New-Item $HOME\Desktop\SAMPLES -ItemType Directory
 
 ````
 
-[ Optional: Adding SIFT and REMnux to your Windows Forensics environment ]
-* Following next [instructions](https://bakerstreetforensics.com/2021/05/26/adding-sift-and-remnux-to-your-windows-forensics-environment)
+[ Optional installation ]
+* Adding SIFT and REMnux to your Windows Forensics [environment](https://bakerstreetforensics.com/2021/05/26/adding-sift-and-remnux-to-your-windows-forensics-environment)
+* LibreOffice install
+````cmd
+choco install libreoffice
+````
 
 [ Customize other configurations and/or tools to your liking ]
 

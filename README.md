@@ -154,9 +154,9 @@ New-Item $HOME\Desktop\SAMPLES -ItemType Directory
 
 ````
 
-[ Optional: Microsoft Office 2013 Pro. License required ]
+[ Optional: Adding SIFT and REMnux to your Windows Forensics environment ]
 ````cmd (powershell)
-choco install OfficeProPlus2013
+Following next instructions [environment](https://bakerstreetforensics.com/2021/05/26/adding-sift-and-remnux-to-your-windows-forensics-environment/)
 ````
 
 [ Customize other configurations and/or tools to your liking ]
